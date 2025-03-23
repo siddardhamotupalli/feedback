@@ -72,6 +72,16 @@
             }
         });
     </script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var feedback = document.getElementById("feedback").value;
+
+    alert("Name: " + name + "\nEmail: " + email + "\nFeedback: " + feedback);
+});
+
 
 </body>
 </html>
